@@ -1,0 +1,92 @@
+.navbar{
+    width: auto;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 25px;
+    background-color: white;
+    margin-left: 310px;
+}
+
+.nav-link{
+    margin: 2px 10px;
+    color: #891180;
+}
+
+.bg-item{
+    background-color: #891180;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+
+h3{
+    color: #891180;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.logo{
+    mix-blend-mode: multiply;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.patterns {
+    height: 100vh;
+  }
+
+  .icons{
+    float: right;
+    margin-top: 15px;
+    list-style: none;
+    margin-left: 200px;
+    font-size: 30px;
+  }
+  
+  .icon{
+    margin-right: 20px;
+    color:#891180;
+  }
+
+  .iconActive{
+    color: #c9356c;
+  }
+  
+  
+  svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #78154d;
+    font-size: 100px;
+    font-weight: 700;
+    stroke-width: 3;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(274, 57%, 74%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }
+
+  

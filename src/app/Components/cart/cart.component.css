@@ -1,0 +1,123 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+
+img{
+    mix-blend-mode: multiply;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    margin-left: 300px;
+}
+
+h5{   
+    margin-top: 100px;
+    font-size: 50px;
+    color: #eca0b6;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #664167;
+}
+
+.table{
+    top: 0px; 
+    border: 1px solid palevioletred;
+}
+
+th, td{
+    border: 1px solid palevioletred;
+    text-align: center;
+    width: 300px;
+    max-height: 200px;
+}
+
+
+
+.itemImg{
+    
+    width: 100px;
+    height: 100px;
+    margin-right: 300px;
+    
+}
+
+
+.price {
+  margin-bottom: 20px;
+  margin-top: 50px;
+
+}
+
+.trash{
+    color: red;
+}
+
+.price .btn{
+    margin-left: 800px;
+}
+
+.totalprice{
+    color: #c54c82;
+    margin-left: 10px;
+}
+
+.total{
+    color: #680747;
+    margin-left: 30px;
+}
+
+.titleItem{
+    font-size: large;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffc1c8;
+    margin-top: 20px;
+}
+
+.prices{
+    color: #c86b85;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.colHead th{
+    color: #a070a1;
+}
+
+
+
+h2 {
+    position: relative;
+    font-size: 14vw;
+    color:#a23b72;
+    -webkit-text-stroke: 0.3vw #a23b72;
+    text-transform: uppercase;
+    margin-top: 50px;
+    
+}
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:#750571;
+    -webkit-text-stroke: 0vw #750571;
+    border-right: 2px solid #750571;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+
+    0% ,10%,100%{
+        width: 0%;
+    }
+   70%,90%{
+        width: 100%;
+    }
+}

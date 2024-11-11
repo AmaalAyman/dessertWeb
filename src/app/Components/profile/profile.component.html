@@ -1,0 +1,17 @@
+
+<div class="card  mb-3 " style="width: 900px;">
+    <div class="row g-0">
+      <div class="col-md-5">
+        <img src="https://cdn-icons-png.flaticon.com/512/2521/2521890.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h3 class="card-title">Name: {{name}}</h3>
+          <h4 class="card-text email">Email: {{email}}</h4>        
+          <h4 class="allPass">Password: 
+            <i [style.visibility]="password.length >= num?'visible':'hidden'" *ngFor="let num of passlen" class="pass fa-solid fa-star-of-life"></i>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,77 @@
+.navbar{
+    background-color: inherit;
+    width: 300px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: auto;
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.nav-link{
+    margin: 2px 10px;
+    color: #891180;
+}
+
+.bg-item{
+    background-color: #891180;
+    color: white;
+    border-radius: 30px;
+    
+}
+
+
+h3{
+    color: #891180;
+    float: left;
+    margin-top: 23px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+.logo{
+    mix-blend-mode: multiply;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+.patterns {
+    height: 100vh;
+  }
+  
+  
+  
+  svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #78154d;
+    font-size: 100px;
+    font-weight: 700;
+    stroke-width: 3;
+   
+    animation: textAnimate 5s infinite alternate;
+    
+  }
+  
+  @keyframes textAnimate {
+    0% {
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset:  20%;
+      fill:hsl(274, 57%, 74%)
+  
+    }
+    
+    100% {
+      stroke-dasharray: 50% 0;
+      stroke-dashoffstet: -20%;
+      fill: hsla(189, 68%, 75%,0%)
+    }
+    
+  }

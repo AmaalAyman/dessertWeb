@@ -1,0 +1,43 @@
+<section>
+<h3><img class="logo" src="./assets/Dessert/cake_15575235.gif">Sweets</h3>
+
+<div class="icons d-flex">
+  <a class="icon" routerLink="/wishlist" routerLinkActive="iconActive"><i class="fa-solid fa-heart"></i></a>
+  <a class="icon" routerLink="/cart" routerLinkActive="iconActive"><i class="fa-solid fa-cart-shopping"></i></a>
+  <a class="icon" routerLink="/profile" routerLinkActive="iconActive"><i class="fa-solid fa-user"></i></a>
+  <a class="icon" (click)="signout()"><i class="fa-solid fa-right-from-bracket"></i></a>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page"  routerLink="/home" routerLinkActive="bg-item">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  routerLink="/pies" routerLinkActive="bg-item">Pies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  routerLink="/dounts" routerLinkActive="bg-item">Donuts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  routerLink="/icecream" routerLinkActive="bg-item">IceCream</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/cakes" routerLinkActive="bg-item">Cakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/chocolates" routerLinkActive="bg-item">Chocolates</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+</section>

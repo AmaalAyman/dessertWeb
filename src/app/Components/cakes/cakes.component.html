@@ -1,0 +1,29 @@
+
+<section class="allProducts container-fluid"> 
+    <div class="disappear">
+      <span>Cake</span> <span>time</span> <span>is</span> <span>the</span> <span>best</span> <span>time 🍰</span> 
+    </div>
+      <div class="row row-cols-4  g-5">
+          <div class="col" *ngFor="let item of dessert">
+            <div class = "card">
+              <img [src]="item.image_url" [alt]="item.title">
+              <div class="card-content">
+                
+                <h2>
+                 {{item.title.split(" ").slice(0,3).join(" ")}}
+                </h2>
+                <p>
+                  <i [style.color]="(item.social_rank/10)/2 >= num?'yellow':'none'" *ngFor="let num of [1,2,3,4,5]" class="fa-solid fa-star"></i>
+                </p>
+                <h6> {{ (item.social_rank/0.7).toString().slice(5,8) | currency:'  ' }} EGP</h6>
+                                 
+                  <button class="btn cartbtn" (click)="addCart(item)" >Add To Cart</button>
+                  <button #heart class="btn" (click)="addWishList(item, heart)" ><i class="fa-solid fa-heart"></i></button>
+                  
+  
+              </div>
+            </div>
+          </div>
+      </div>
+  
+  </section>

@@ -1,0 +1,39 @@
+<section>
+  <div class="user d-flex" *ngIf="totalPrice !=0">
+    <img src="https://atlas-content-cdn.pixelsquid.com/stock-images/profile-icon-glass-logo-e1owlVB-600.jpg">
+    <h5>{{userName}}</h5>
+    </div>
+    
+    <div class="price d-flex" *ngIf="totalPrice != 0">
+      <h3 class="total">TotalPrice:</h3>
+      <h3 class="totalprice">{{totalPrice | currency:'  ' }} EGP</h3>
+
+      <button class="btn btn-danger" (click)="deleteAll()">Delete All</button>
+    </div>
+    
+    <table class="table" *ngIf="totalPrice != 0">
+        <thead>
+          <tr class="colHead">
+            <th scope="col">Product</th>
+            <th scope="col">Descreption</th>
+            <th scope="col">Price</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor=" let item of viewCart" >
+            <td scope="row"><img class="itemImg rounded" [src]="item.image_url"></td>
+            <td class="titleItem">{{item.title}}</td>
+            <td class="prices">{{ (item.social_rank/0.7).toString().slice(5,8) | currency:'  ' }} EGP</td>
+            <td class="trash" (click)="deleteItem(item.recipe_id)"><i class="fa-solid fa-trash"></i></td>
+            
+          </tr>
+        </tbody>
+      </table>
+
+   
+        <h2 *ngIf="totalPrice == 0" data-text="Cart Empty...">Cart Empty...</h2>
+   
+    
+      
+</section>

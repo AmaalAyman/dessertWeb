@@ -1,0 +1,60 @@
+<section class="bg-img">
+  <div class="dessertPage" *ngIf="home == false">
+    <app-nav-blank></app-nav-blank>
+  </div>
+
+  <!--Home Slider-->
+  <section class="allbody" *ngIf="home == true">
+    <img class="position-relative imageSlider" [src]="product.img" alt="" />
+
+    <div class="position-absolute navBlank">
+      <app-nav-blank></app-nav-blank>
+    </div>
+
+    <h3 #ele1 class="proName position-absolute text-uppercase">
+      {{ product.name }}
+    </h3>
+    <p #ele2 class="despro position-absolute">{{ product.describtion }}</p>
+    <div class="ChooseImg row position-absolute">
+      <img
+        class="smallImg rounded-circle"
+        src="./assets/Dessert/pngtree-apple-pie-pi-day-png-image_10438448.png"
+        alt="pie"
+        (click)="checkType('pie', ele1, ele2)"
+      />
+      <img
+        class="smallImg rounded-circle"
+        src="./assets/Dessert/donuts-doughnut-donut-doughnuts-donuts-transparent-background-ai-generated-png.webp"
+        alt="dount"
+        (click)="checkType('donuts', ele1, ele2)"
+      />
+      <img
+        class="smallImg rounded-circle"
+        src="./assets/Dessert/s11728_ice_cream_isolated_on_white_background_-stylize_200_-_26628dae-67d4-4a84-a16e-20dd2eab9b8d_2-photoroom-png-photoroom_11zon.png"
+        alt="icecream"
+        (click)="checkType('iceCream', ele1, ele2)"
+      />
+      <img
+        class="smallImg rounded-circle"
+        src="./assets/Dessert/pngtree-colorful-birthday-cake-decorated-with-melted-strawberries-png-image_10002519.png"
+        alt="cake"
+        (click)="checkType('cake', ele1, ele2)"
+      />
+      <img
+        class="smallImg rounded-circle"
+        src="./assets/Dessert/cb1fdc0a38022da003f428ab8f13d096.jpg"
+        alt="chocolate"
+        (click)="checkType('chocolate', ele1, ele2)"
+      />
+    </div>
+  </section>
+
+  <br /><br />
+
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</section>
+
+<app-footer></app-footer>
